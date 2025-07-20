@@ -8,7 +8,7 @@ terraform {
 }
 
 provider "google" {
-  project = "project-david-462315"
+  project     = "project-david-462315"
   credentials = file("project-david-462315-7a9d533c3cee.json")
 }
 
