@@ -1,13 +1,12 @@
 resource "google_sql_database_instance" "instance" {
-    name           = "mysql-db"
-    region         = "us-central1"
-    database_version ="MYSQL_8_0"
-    settings {
-        tier ="db-f1-micro"
-    }
+  name             = "mysql-db"
+  region           = "us-central1"
+  database_version = "MYSQL_8_0"
+  settings {
+    tier = "db-f1-micro"
+  }
 
-
-    deletion_protection = "false"
+  deletion_protection = "false"
 }
 resource "google_sql_database_instance" "mysql_instance_2" {
   name             = "mysql-db-2"
@@ -17,7 +16,7 @@ resource "google_sql_database_instance" "mysql_instance_2" {
     tier = "db-f1-micro"
   }
 
-  deletion_protection  = false
+  deletion_protection = false
 }
 
 resource "google_sql_database_instance" "postgres_instance" {
@@ -28,5 +27,5 @@ resource "google_sql_database_instance" "postgres_instance" {
     tier = "db-f1-micro"
   }
 
-  deletion_protection  = false
+  deletion_protection = false
 }
