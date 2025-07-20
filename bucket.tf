@@ -12,8 +12,6 @@ resource "google_storage_bucket" "gcp-bucket2" {
   uniform_bucket_level_access = true
 }
 
-
-
 resource "google_storage_bucket" "gcp-bucket3" {
   name     = "nexedge-bucket-david12346"
   location = "ASIA"

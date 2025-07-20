@@ -21,7 +21,7 @@ resource "google_compute_instance" "test-vm2" {
   name         = "my-vm-2"
   machine_type = "e2-micro"        
   zone         = "southamerica-west1-a"
-
+  
   boot_disk {
     initialize_params {
       image = "ubuntu-os-cloud/ubuntu-2204-lts"

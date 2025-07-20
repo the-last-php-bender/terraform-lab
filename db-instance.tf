@@ -20,8 +20,6 @@ resource "google_sql_database_instance" "mysql_instance_2" {
   deletion_protection  = false
 }
 
-
-
 resource "google_sql_database_instance" "postgres_instance" {
   name             = "postgres-db-3"
   region           = "northamerica-south1"
